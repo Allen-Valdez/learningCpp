@@ -11,5 +11,6 @@ int main()
       laterYears = (dogAge - 2) * 4,
       // Then to get the human yers we need to add the early and later years
       humanYears = earlyYears + laterYears;
+      // Now time to display the information to the user
   std::cout << "My name is " << dogName << "! Ruff ruff, I am " << humanYears << " years old in human years." << std::endl;
 }
