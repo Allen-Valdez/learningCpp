@@ -15,25 +15,19 @@ int main()
   vector<char> vowels{'a', 'e', 'i', 'o', 'u'};
   vector<char> result{};
 
-  for (auto c : phrase)
-  {
-    for (auto ch : vowels)
-    {
-      if (ch == c && c == 'e' || ch == c && c == 'u')
-      {
+  for (auto c : phrase) {
+    for (auto ch : vowels) {
+      if (ch == c) {
         result.push_back(c);
-        result.push_back(c);
-      }
-      else if (ch == c)
-      {
-        result.push_back(c);
+        if (c == 'e' || c == 'u') {
+          result.push_back(c);
+        }
       }
     }
   }
 
   // Time to post the result
-  for (auto c : result)
-  {
+  for (auto c : result) {
     cout << c;
   }
   cout << endl;
